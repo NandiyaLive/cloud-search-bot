@@ -58,6 +58,7 @@ def log(update, context):
 @run_async
 def bot_help(update, context):
     help_string = f'''
+    "Hello! I can search files on Google drive.\n\n"
 /{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
 /{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
 /{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
