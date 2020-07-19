@@ -92,11 +92,11 @@ sudo dockerd
 ```
 - Build Docker image:
 ```
-sudo docker build . -t mirror-bot
+sudo docker build . -t cloud-search-bot
 ```
 - Run the image:
 ```
-sudo docker run mirror-bot
+sudo docker run cloud-search-bot
 ```
 
 # Using service accounts for uploading to avoid user rate limit
