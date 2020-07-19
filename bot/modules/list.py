@@ -18,7 +18,7 @@ def list_drive(update,context):
     else:
         reply_message = sendMessage('No result found', context.bot, update)
 
-    threading.Thread(target=auto_delete_message, args=(context.bot, update.message, reply_message)).start()
+    threading.Thread(args=(context.bot, update.message, reply_message)).start()
 
 
 list_handler = CommandHandler(BotCommands.ListCommand, list_drive,filters=CustomFilters.authorized_chat | CustomFilters.authorized_user)
