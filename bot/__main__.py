@@ -58,10 +58,10 @@ def log(update, context):
 def bot_help(update, context):
     help_string = f'''
     Hello! I can search files on Google drive 🔍\n
-    /{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
-    /{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
-    /{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
-    /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
+/{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
+/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
+/{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
+/{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
     '''
     sendMessage(help_string, context.bot, update)
 
