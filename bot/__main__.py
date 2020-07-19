@@ -27,7 +27,7 @@ def stats(update, context):
 
 @run_async
 def start(update, context):
-    sendMessage("Hello! I can search files on Google drive.\n"
+    sendMessage("Hello! I can search files on Google drive 🔍\n"
                 "Try /list [Search Query]\n", context.bot, update)
 
 
@@ -57,13 +57,12 @@ def log(update, context):
 @run_async
 def bot_help(update, context):
     help_string = f'''
-    "Hello! I can search files on Google drive.\n\n"
-/{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
-/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
-/{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
-/{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
-
-'''
+    Hello! I can search files on Google drive 🔍\n
+    /{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
+    /{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
+    /{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
+    /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
+    '''
     sendMessage(help_string, context.bot, update)
 
 
